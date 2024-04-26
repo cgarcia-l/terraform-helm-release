@@ -1,0 +1,64 @@
+version: ">= 0.13.0, < 1.6.6"
+
+formatter: "markdown table"
+
+header-from: main.tf
+footer-from: ""
+
+sections:
+  #hide: []
+  show:
+    - header
+    - data-sources
+    - footer
+    - inputs
+    - modules
+    - outputs
+    - providers
+    - requirements
+    - resources
+
+content: |-
+
+  {{ .Providers }}
+
+  {{ .Resources }}
+
+  {{ .Inputs }}
+
+  {{ .Outputs }}
+
+  {{ .Requirements }}
+
+  ## Examples
+
+  ```hcl
+  {{ include "examples/docs/main.tf" }}
+  ```
+
+output:
+  file: "README.md"
+  mode: inject
+  template: |-
+    [//]: # (BEGIN_TF_DOCS)
+    {{ .Content }}
+
+    [//]: # (END_TF_DOCS)
+
+sort:
+  enabled: true
+  by: name
+
+settings:
+  anchor: false
+  color: true
+  default: true
+  description: true
+  escape: true
+  html: true
+  indent: 2
+  lockfile: true
+  read-comments: true
+  required: true
+  sensitive: true
+  type: true

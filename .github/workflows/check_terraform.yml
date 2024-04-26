@@ -1,0 +1,30 @@
+name: Check Terraform Module and Generate Documentation
+on:
+  - pull_request
+
+jobs:
+  terraform_check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3.0.0
+      with:
+        terraform_version: 1.5.7
+
+    - name: Terraform fmt
+      id: fmt
+      run: terraform fmt -check
+      continue-on-error: false
+
+    - name: Terraform Init
+      id: init
+      run: terraform init
+
+    - name: Terraform Validate
+      id: validate
+      run: terraform validate -no-color
+      continue-on-error: false

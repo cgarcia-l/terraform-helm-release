@@ -1,0 +1,23 @@
+name: Check Terraform Module and Generate Documentation
+on:
+  - pull_request
+
+jobs:
+  generate_docs:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+
+    - name: Render terraform docs and push changes back to PR
+      uses: terraform-docs/gh-actions@main
+      with:
+        working-dir: .
+        config-file: .terraform-docs.yaml
+        git-commit-message: "docs: update terraform docs"
+        output-file: README.md
+        output-method: inject
+        template: ""
+        git-push: "true"
