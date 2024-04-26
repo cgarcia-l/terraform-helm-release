@@ -1,4 +1,3 @@
-Certainly! Here's a README for your Terraform module that deploys Helm charts:
 # Terraform Helm Chart Deployment Module
 
 This Terraform module is designed to facilitate the deployment of Helm charts onto Kubernetes clusters. It offers flexibility in configuring various aspects of the deployment, such as repository credentials, chart versions, and custom values.
