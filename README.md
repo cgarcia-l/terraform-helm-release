@@ -12,7 +12,21 @@
 ![](https://img.shields.io/github/last-commit/cgarcia-l/terraform-helm-release)
 [![](https://img.shields.io/github/license/cgarcia-l/terraform-helm-release)](https://github.com/cgarcia-l/terraform-helm-release)
 
-Terraform module to deploy Helm charts using the Helm provider.
+## Table of Contents
+- [Description](#description)
+- [Providers](#providers)
+- [Resources](#resources)
+- [Inputs](#inputs)
+- [Outputs](#outputs)
+- [Requirements](#requirements)
+- [Examples](#examples)
+- [How to Contribute](#how-to-contribute)
+- [Authors](#authors)
+- [License](#license)
+
+## Description
+
+This repository contains a Terraform module for deploying Helm charts using the Helm provider. It's designed to be flexible and easy to use, allowing you to deploy a variety of applications with a single module. The module takes a map of applications as input, each with its own set of configuration options.
 
 [//]: # (BEGIN_TF_DOCS)
 
