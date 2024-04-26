@@ -66,7 +66,7 @@ module "example" {
     app2 = {
       namespace            = "jenkins"
       name                 = "jenkins"
-      repository           = "https://jenkins_url"
+      repository           = "https://charts.jenkins.io"
       chart                = "jenkins"
       version              = "v6.7.14"
       repository_key_file  = "path/to/keyfile"
