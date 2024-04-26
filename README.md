@@ -92,3 +92,11 @@ output "deployment" {
 ```
 
 [//]: # (END_TF_DOCS)
+
+## How to Contribute
+
+Submit a pull request
+
+# Authors
+
+Currently maintained by [Carlos García](https://github.com/cgarcia-l)
