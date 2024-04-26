@@ -1,18 +1,16 @@
 resource "helm_release" "this" {
   for_each = var.apps
 
-  namespace            = try(each.value["namespace"], null)
-  repository           = try(each.value["repository"], null)
-  name                 = try(each.value["name"], null)
-  chart                = try(each.value["chart"], null)
-  version              = try(each.value["version"], null)
-  repository_key_file  = try(each.value["repository_key_file"], null)
-  repository_cert_file = try(each.value["repository_cert_file"], null)
-  repository_ca_file   = try(each.value["repository_ca_file"], null)
-  repository_username  = try(each.value["repository_username"], null)
-  repository_password  = try(each.value["repository_password"], null)
-
-  # Otras propiedades con valores predeterminados
+  namespace                  = try(each.value["namespace"], null)
+  repository                 = try(each.value["repository"], null)
+  name                       = try(each.value["name"], null)
+  chart                      = try(each.value["chart"], null)
+  version                    = try(each.value["version"], null)
+  repository_key_file        = try(each.value["repository_key_file"], null)
+  repository_cert_file       = try(each.value["repository_cert_file"], null)
+  repository_ca_file         = try(each.value["repository_ca_file"], null)
+  repository_username        = try(each.value["repository_username"], null)
+  repository_password        = try(each.value["repository_password"], null)
   force_update               = try(each.value["force_update"], false)
   wait                       = try(each.value["wait"], true)
   recreate_pods              = try(each.value["recreate_pods"], true)
