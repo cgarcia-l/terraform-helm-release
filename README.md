@@ -1,5 +1,16 @@
 # terraform-helm-release
 
+![](https://img.shields.io/github/v/tag/cgarcia-l/terraform-helm-release)
+![](https://img.shields.io/github/issues/cgarcia-l/terraform-helm-release)
+![](https://img.shields.io/github/issues-closed/cgarcia-l/terraform-helm-release)
+[![](https://img.shields.io/github/languages/code-size/cgarcia-l/terraform-helm-release)](https://github.com/cgarcia-l/terraform-helm-release)
+[![](https://img.shields.io/github/repo-size/cgarcia-l/terraform-helm-release)](https://github.com/cgarcia-l/terraform-helm-release)
+![](https://img.shields.io/github/languages/top/cgarcia-l/terraform-helm-release?color=green&logo=terraform&logoColor=blue)
+![](https://img.shields.io/github/commit-activity/m/cgarcia-l/terraform-helm-release)
+![](https://img.shields.io/github/contributors/cgarcia-l/terraform-helm-release)
+![](https://img.shields.io/github/last-commit/cgarcia-l/terraform-helm-release)
+[![](https://img.shields.io/github/license/cgarcia-l/terraform-helm-release)](https://github.com/cgarcia-l/terraform-helm-release)
+
 Terraform module to deploy Helm charts using the Helm provider.
 
 [//]: # (BEGIN_TF_DOCS)
@@ -100,3 +111,7 @@ Submit a pull request
 # Authors
 
 Currently maintained by [Carlos García](https://github.com/cgarcia-l)
+
+# License
+
+Apache 2.0 Licensed. See [LICENSE](./LICENSE) for full details.
