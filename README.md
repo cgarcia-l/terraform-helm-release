@@ -8,7 +8,7 @@ Terraform module to deploy Helm charts using the Helm provider.
 
 | Name | Version |
 |------|---------|
-| helm | n/a |
+| helm | 2.13.1 |
 
 ## Resources
 
