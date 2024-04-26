@@ -1,6 +1,7 @@
 # terraform-helm-release
 
 ![](https://img.shields.io/github/v/tag/cgarcia-l/terraform-helm-release)
+[![](https://img.shields.io/badge/semantic--release-conventionalcommits-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 ![](https://img.shields.io/github/issues/cgarcia-l/terraform-helm-release)
 ![](https://img.shields.io/github/issues-closed/cgarcia-l/terraform-helm-release)
 [![](https://img.shields.io/github/languages/code-size/cgarcia-l/terraform-helm-release)](https://github.com/cgarcia-l/terraform-helm-release)
